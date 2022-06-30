@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>JavaScript - Try Catch</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //ReferenceError
+    // let x
+    // try {
+    //   x = y + 1
+    // } catch (error) {
+    //    console.log('name', error.name)
+    //    console.log('message', error.message)
+    // }
+
+    //SyntaxError
+    // try {
+    //    eval("alert('hello)")
+    // } catch (error) {
+    //    console.log('name', error.name)
+    //    console.log('message', error.message)
+    // }
+
+    //TypeError
+    // let num = 1
+    // try {
+    //    num.toUpperCase()
+    // } catch (error) {
+    //    console.log('name', error.name)
+    //    console.log('message', error.message)
+    // }
+
+    function UserException(message) {
+        this.message = message
+        this.name = "UserException"
+    }
+
+    try {
+        let numero = -6
+        if(numero < 0){
+            throw new UserException("O número deve ser positivo")
+        }
+        console.log('ok')
+    } catch (error) {
+        console.log('name', error.name) //UserException
+        //console.log('message', error.message) //O número deve ser positivo
+        alert(error.message)
+    }
+
+</script>
+</html>
