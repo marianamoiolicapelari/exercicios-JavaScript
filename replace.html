@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <title>replace</title>
+</head>
+<body>
+  JavaScript - Replace
+</body>
+<script>
+  //primeiro exemplo
+  // let texto = "eu amo o JavaScript"
+  // let textoAtualizado = texto.replace("JavaScript", "PHP")
+  // console.log(textoAtualizado)
+
+
+  //exemplo com regex
+  // let texto = "eu amo o JavaScript, o JavaScript é uma excelente linguagem de programação"
+  // let textoAtualizado = texto.replace(/JavaScript/g, "PHP")
+  // console.log(textoAtualizado)
+
+  // => /g => quer dizer que a palavra JavaScript será buscada e trocada em todo o texto
+
+
+  //exemplo regex case sensitive
+  // let texto = "eu amo o JaVAScript, o JavaSCRipt é uma excelente linguagem de programação"
+  // let textoAtualizado = texto.replace(/JavaScript/gi, "PHP")
+  // console.log(textoAtualizado)
+
+  // => /i => quer dizer que a palavra JavaScript será buscada e trocada em todo o texto independente
+  //          se ela for maiuscula ou minuscula
+
+  //exemplo com função
+  // let texto =`JavaScript - eu amo o JavaScript, o JavaScript é uma excelente linguagem de programação
+  // e o JavaScript possibilita programar no frontend, backend e mobile`
+  // let textoAtualizado = texto.replace(/JavaScript/gi, (valor, index, original) => {
+  //   if (index !== 0) {
+  //     return "PHP"
+  //   } else {
+  //     return valor
+  //   }
+  // })
+  // console.log(textoAtualizado)
+
+  //exemplo prático, retirando pontos e traço do cpf
+  let cpf = "123.456.789-09"
+  let cpfLimpo = cpf.replace(/\D+/g,'').replace('-','')
+  console.log(cpfLimpo)
+
+  //é possível usar mais de um replace no código, como no exemplo acima, mas somente se necessário.
+  //o \D localiza tudo que não é número e o + na frente dele indica que se tiver mais de um caractere que
+  //não seja número e esteja em sequencia, remover junto  
+
+</script>
+</html>
