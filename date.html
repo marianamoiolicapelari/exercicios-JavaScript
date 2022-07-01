@@ -18,10 +18,10 @@
 
     //CALCULAR A DIFERENÇA DE DIAS ENTRE DATAS
     let diaAtual = new Date()
-    let dataPassada = new Date(2022, 04, 01)
+    let dataPassada = new Date(2022, 06, 20)
     let dataEmMilisegundo = Math.abs(diaAtual.getTime() - dataPassada.getTime())
     let diasDeDiferença = Math.ceil(dataEmMilisegundo / (1000 * 60 * 60 * 24))
-    console.log(`A diferença de dias são de ${diasDeDiferença} dias`)
+    console.log(`A diferença de dias, são de ${diasDeDiferença} dias`)
 
 
     // //SOMAR DIAS A UMA DATA
@@ -31,10 +31,10 @@
     // console.log(formatarData(data))
 
 
-    //COMO PEGAR PRIMEIRO E ÚLTIMO DIA DO MÊS
-    let data = new Date()
-    let primeiroDia = new Date(data.getFullYear(), data.getMonth(), 1)
-    let ultimoDia = new Date(data.getFullYear(), data.getMonth() +1, 0)
-    console.log(formatarData(primeiroDia), formatarData(ultimoDia))
+    // //COMO PEGAR PRIMEIRO E ÚLTIMO DIA DO MÊS
+    // let data = new Date()
+    // let primeiroDia = new Date(data.getFullYear(), data.getMonth(), 1)
+    // let ultimoDia = new Date(data.getFullYear(), data.getMonth() +1, 0)
+    // console.log(formatarData(primeiroDia), formatarData(ultimoDia))
 </script>
 </html>
