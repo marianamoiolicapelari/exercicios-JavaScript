@@ -1,0 +1,31 @@
+<!-- Diferença entre substring e substr
+
+- No substring é passado a posição incial e final.
+- No substr é passado a posição inicial e quantos caracteres após o início será retornado
+
+let mensagem = "Eu trabalho com JavaScript, VueJS e PHP"
+let palavra = mensagem.substring(16,26)
+console.log(palavra) //JavaScript
+
+let mensagem = "Eu trabalho com JavaScript, VueJS e PHP"
+let palavra = mensagem.substr(16,10) // 16 = IndexStart e 10 = IndexEnd
+console.log(palavra) //JavaScript -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>replace</title>
+</head>
+
+<body>
+  JavaScript - Substring
+</body>
+<script>
+  let mensagem = "Pedido realizado com #sucesso"
+  let indexStart = mensagem.indexOf("#")
+  let palavra = mensagem.substring(indexStart + 1)
+  console.log("palavra:", palavra)
+</script>
+
+</html>
