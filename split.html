@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>replace</title>
+</head>
+
+<body>
+  JavaScript - Split
+</body>
+<script>
+  //SEPARAR A STRING COM O SPLIT
+  //let texto = "este é um texto para o teste"
+  //let resultado = texto.split(" ")
+  //console.log(resultado)
+
+  //PARÂMETRO LIMITE
+  //let texto = "este é um texto para o teste"
+  //let resultado = texto.split(" ",4)
+  //console.log(resultado)
+
+  //STRING COM VÍRGULAS
+  //let texto = "laranja, banana, pera"
+  //let resultado = texto.split(", ")
+  //console.log(resultado)
+
+  //SEPARAR POR CADEIA DE CARACTERES
+  //let texto = "este é um texto para o teste"
+  //let resultado = texto.split("um texto")
+  //console.log(resultado)
+
+  //REVERTER STRINGS
+  //let texto = "palavra"
+  //let resultado = texto.split("").reverse().join("")
+  //console.log(resultado)
+
+  //CONTAR A QUANTIDADE DE OCORRENCIAS DE UMA LETRA NA STRING
+  let texto = "palavra utilizada para teste"
+  let resultado = texto.split("").filter(letra => letra.indexOf("a") != -1)
+  console.log(resultado)
+  console.log("Quantidade de letras A =", resultado.length)
+</script>
+
+</html>
