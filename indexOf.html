@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>replace</title>
+</head>
+
+<body>
+  JavaScript - Split
+</body>
+<script>
+  //PROCURAR INTEIRO EM ARRAY
+  // let NUMEROS = [5, 10, 15]
+  // console.log(numeros.indexOf(15))
+
+  //PROCURAR STRING DENTRO DE UM ARRAY DE STRINGS
+  // let frutas = ['Pera', 'Laranja', 'Maça']
+  // console.log(frutas.indexOf('Maça'))
+
+  //PROCURANDO UMA STRING DENTRO DE OUTRA
+  // let texto = "um texto para teste"
+  // console.log(texto.indexOf('teste'))
+
+  //UTILIZANDO O SEGUNDO PARÂMETRO
+  // let texto = "um texto para teste, vamos ver se o teste da certo"
+  // console.log(texto.indexOf("teste", 15))
+
+  let filtro = "A"
+  let cores = ["Vermelho", "Verde", "Azul", "Amarelo"]
+  let coresFiltrado = cores.filter( (cor) => {
+    if(cor.indexOf(filtro) !== -1){
+      return cor
+    }
+  })
+  console.log(coresFiltrado)
+</script>
+
+</html>
